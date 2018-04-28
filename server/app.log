@@ -853,3 +853,323 @@
 2018-04-28 17:09:18.934  INFO 45175 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@581e963b: startup date [Sat Apr 28 17:08:17 CST 2018]; root of context hierarchy
 2018-04-28 17:09:18.939  INFO 45175 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2018-04-28 17:09:18.954  INFO 45175 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-28 17:52:30.651  INFO 45583 --- [main] com.sinosteel.FrameworkApplication       : Starting FrameworkApplication on libowendeMacBook-Pro.local with PID 45583 (started by lbw in /Users/lbw/Developer/software program/stc-practice/server)
+2018-04-28 17:52:30.657  INFO 45583 --- [main] com.sinosteel.FrameworkApplication       : No active profile set, falling back to default profiles: default
+2018-04-28 17:52:30.786  INFO 45583 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ae2593: startup date [Sat Apr 28 17:52:30 CST 2018]; root of context hierarchy
+2018-04-28 17:52:33.892  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f4146c4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:33.941  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$3d26a26a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:33.975  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$319a670e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.195  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.208  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers' of type [class org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.211  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$e22c0368] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.219  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration$$EnhancerBySpringCGLIB$$39b6f1d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.233  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$$EnhancerBySpringCGLIB$$e9ab9788] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.258  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.autoconfigure.redis.RedisProperties' of type [class org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.261  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisPooledConnectionConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisPooledConnectionConfiguration$$EnhancerBySpringCGLIB$$1d9bc540] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.347  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [class org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.381  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [class org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.404  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [class org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.406  INFO 45583 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 17:52:34.842  INFO 45583 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2018-04-28 17:52:34.861  INFO 45583 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-04-28 17:52:34.862  INFO 45583 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2018-04-28 17:52:35.473  INFO 45583 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-04-28 17:52:35.512  INFO 45583 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-28 17:52:35.513  INFO 45583 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4733 ms
+2018-04-28 17:52:36.111  INFO 45583 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-04-28 17:52:36.113  INFO 45583 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 17:52:36.117  INFO 45583 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 17:52:36.118  INFO 45583 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 17:52:36.119  INFO 45583 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 17:52:36.121  INFO 45583 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 17:52:36.122  INFO 45583 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-04-28 17:52:36.123  INFO 45583 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'corsFilter' to: [/*]
+2018-04-28 17:52:36.577  WARN 45583 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : maxIdle is larger than maxActive, setting maxIdle to: 20
+2018-04-28 17:52:37.051  INFO 45583 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-28 17:52:37.076  INFO 45583 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-28 17:52:37.247  INFO 45583 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-04-28 17:52:37.249  INFO 45583 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-04-28 17:52:37.252  INFO 45583 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-04-28 17:52:37.623  INFO 45583 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-04-28 17:52:37.717  INFO 45583 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-04-28 17:52:37.946  INFO 45583 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-04-28 17:52:38.419  INFO 45583 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-04-28 17:52:38.420  INFO 45583 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2018-04-28 17:52:38.422  INFO 45583 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2018-04-28 17:52:38.481  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_milestone
+2018-04-28 17:52:38.481  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, altered_user_id, project_id, created_user_id, name, milestone_name, id, milestone_time, status]
+2018-04-28 17:52:38.482  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.482  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_jlgy4naiuflxclsndbgp8ctu8, primary]
+2018-04-28 17:52:38.530  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_project
+2018-04-28 17:52:38.531  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, actual_duration, code, altered_user_id, created_user_id, completed, project_name, start_time, altered_time, name, expected_duration, comment, location, id, director_id]
+2018-04-28 17:52:38.531  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.532  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.564  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_standard
+2018-04-28 17:52:38.565  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [summary, created_time, code, altered_time, issue_date, altered_user_id, created_user_id, name, id, type, status]
+2018-04-28 17:52:38.566  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.566  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.596  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_function
+2018-04-28 17:52:38.597  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, function_code, function_string, altered_user_id, created_user_id, name, function_path, id, menu_id]
+2018-04-28 17:52:38.597  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.597  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_itqdcta4ccyss9hycawsgucrm, primary]
+2018-04-28 17:52:38.635  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_menu
+2018-04-28 17:52:38.636  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, menu_icon, module_id, altered_time, altered_user_id, parent_id, created_user_id, menu_path, name, id]
+2018-04-28 17:52:38.636  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.636  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_i69suv95ch4ud7irsd1lregqy, primary]
+2018-04-28 17:52:38.669  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_module
+2018-04-28 17:52:38.669  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, altered_user_id, created_user_id, name, id, module_path, module_icon]
+2018-04-28 17:52:38.669  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.669  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.702  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_operation_log
+2018-04-28 17:52:38.702  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, file_names, response_status, altered_user_id, created_user_id, params, uri, altered_time, date_time, name, client, id, username]
+2018-04-28 17:52:38.702  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.703  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.729  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_organization
+2018-04-28 17:52:38.729  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, altered_user_id, parent_id, created_user_id, name, description, id, organization_name]
+2018-04-28 17:52:38.729  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.730  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.758  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_role
+2018-04-28 17:52:38.758  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [role_name, role_string, created_time, code, altered_time, altered_user_id, created_user_id, name, description, id]
+2018-04-28 17:52:38.758  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.758  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.788  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_role_function
+2018-04-28 17:52:38.788  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [role_id, function_id]
+2018-04-28 17:52:38.788  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.788  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_2r3mx5cv4q1eu6i7oex4a7y65, fk_tgfnmsm51p1heid7qd9wcghxj]
+2018-04-28 17:52:38.817  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_role_user
+2018-04-28 17:52:38.818  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [user_id, role_id]
+2018-04-28 17:52:38.818  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_44m1qqntwycmydgmmdcmagdn3, fk_4rbt5lhjoqj0r268ur0gcurf2]
+2018-04-28 17:52:38.818  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_44m1qqntwycmydgmmdcmagdn3, fk_4rbt5lhjoqj0r268ur0gcurf2]
+2018-04-28 17:52:38.855  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_user
+2018-04-28 17:52:38.855  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, password, code, salt, altered_time, altered_user_id, created_user_id, name, id, username]
+2018-04-28 17:52:38.855  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.855  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 17:52:38.884  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_topic
+2018-04-28 17:52:38.884  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_user_id, created_user_id, start_time, altered_time, project_id, topic_name, name, comment, location, id, director_id]
+2018-04-28 17:52:38.884  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 17:52:38.884  INFO 45583 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_o8dc6e1w8u4ci53fjycq0fm3q, primary]
+2018-04-28 17:52:38.888  INFO 45583 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2018-04-28 17:52:40.712  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ae2593: startup date [Sat Apr 28 17:52:30 CST 2018]; root of context hierarchy
+2018-04-28 17:52:40.831  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryStandards]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.queryStandards(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.833  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addStandard]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.addStandard(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.833  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteStandard]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.deleteStandard(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.834  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editStandard]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.editStandard(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.844  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryAllTopics]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.queryAllTopics(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.844  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addTopic]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.addTopic(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.844  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryTopics]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.queryTopics(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.845  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteTopic]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.deleteTopic(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.845  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editTopic]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.editTopic(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.847  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryProjects]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.queryProjects(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.848  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryAllProjects]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.queryAllProjects(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.848  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addProject]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.addProject(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.849  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editProject]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.editProject(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.849  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteProject]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.deleteProject(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.850  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryMilestones]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.queryMilestones(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.858  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addMilestone]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.addMilestone(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.858  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editMilestone]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.editMilestone(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.859  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteMilestone]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.deleteMilestone(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.860  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.AuthController.login(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.860  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resetPassword]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.AuthController.resetPassword(com.sinosteel.framework.core.web.Request)
+2018-04-28 17:52:40.868  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 17:52:40.873  INFO 45583 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 17:52:40.933  INFO 45583 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 17:52:40.935  INFO 45583 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 17:52:41.011  INFO 45583 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 17:52:41.295  INFO 45583 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-28 17:52:42.267  INFO 45583 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2018-04-28 17:52:42.272  INFO 45583 --- [main] com.sinosteel.FrameworkApplication       : Started FrameworkApplication in 12.725 seconds (JVM running for 17.492)
+2018-04-28 17:55:00.980  INFO 45583 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 17:55:00.981  INFO 45583 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 17:55:01.007  INFO 45583 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-04-28 19:45:21.967  WARN 45583 --- [http-nio-8000-exec-9] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:21.968  WARN 45583 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:21.998  WARN 45583 --- [http-nio-8000-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:48.279  WARN 45583 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:48.282  WARN 45583 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:48.288  WARN 45583 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:49.425  WARN 45583 --- [http-nio-8000-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 19:45:49.425  WARN 45583 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:02:56.085  WARN 45583 --- [http-nio-8000-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:02:56.085  WARN 45583 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:03:26.066  WARN 45583 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:03:26.067  WARN 45583 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:03:36.178  WARN 45583 --- [http-nio-8000-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:03:36.181  WARN 45583 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:05:39.976  WARN 45583 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:05:39.976  WARN 45583 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:05:43.546  WARN 45583 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:06:12.969  WARN 45583 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:06:12.969  WARN 45583 --- [http-nio-8000-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:06:14.855  WARN 45583 --- [http-nio-8000-exec-7] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:07:31.027  INFO 45583 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ae2593: startup date [Sat Apr 28 17:52:30 CST 2018]; root of context hierarchy
+2018-04-28 20:07:31.044  INFO 45583 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-28 20:07:31.054  INFO 45583 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-28 20:31:08.932  INFO 46527 --- [main] com.sinosteel.FrameworkApplication       : Starting FrameworkApplication on libowendeMacBook-Pro.local with PID 46527 (started by lbw in /Users/lbw/Developer/software program/stc-practice/server)
+2018-04-28 20:31:08.939  INFO 46527 --- [main] com.sinosteel.FrameworkApplication       : No active profile set, falling back to default profiles: default
+2018-04-28 20:31:09.095  INFO 46527 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@538e5155: startup date [Sat Apr 28 20:31:09 CST 2018]; root of context hierarchy
+2018-04-28 20:31:11.497  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$493fa01f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.550  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$9251d63d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.575  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$86c59ae1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.789  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.803  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers' of type [class org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.804  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$3757373b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.814  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration$$EnhancerBySpringCGLIB$$8ee225ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.828  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$$EnhancerBySpringCGLIB$$3ed6cb5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.861  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.autoconfigure.redis.RedisProperties' of type [class org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.867  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisPooledConnectionConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisPooledConnectionConfiguration$$EnhancerBySpringCGLIB$$72c6f913] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.940  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [class org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.973  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [class org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.994  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [class org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:11.996  INFO 46527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 20:31:12.438  INFO 46527 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2018-04-28 20:31:12.462  INFO 46527 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-04-28 20:31:12.465  INFO 46527 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2018-04-28 20:31:12.869  INFO 46527 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-04-28 20:31:12.876  INFO 46527 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-28 20:31:12.877  INFO 46527 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3793 ms
+2018-04-28 20:31:13.422  INFO 46527 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-04-28 20:31:13.424  INFO 46527 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 20:31:13.429  INFO 46527 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 20:31:13.430  INFO 46527 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 20:31:13.430  INFO 46527 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 20:31:13.431  INFO 46527 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 20:31:13.431  INFO 46527 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-04-28 20:31:13.432  INFO 46527 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'corsFilter' to: [/*]
+2018-04-28 20:31:13.893  WARN 46527 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : maxIdle is larger than maxActive, setting maxIdle to: 20
+2018-04-28 20:31:14.476  INFO 46527 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-28 20:31:14.514  INFO 46527 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-28 20:31:14.707  INFO 46527 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2018-04-28 20:31:14.710  INFO 46527 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-04-28 20:31:14.714  INFO 46527 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-04-28 20:31:15.181  INFO 46527 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-04-28 20:31:15.293  INFO 46527 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-04-28 20:31:15.521  INFO 46527 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2018-04-28 20:31:16.055  INFO 46527 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-04-28 20:31:16.055  INFO 46527 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2018-04-28 20:31:16.057  INFO 46527 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2018-04-28 20:31:16.128  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_milestone
+2018-04-28 20:31:16.130  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, altered_user_id, project_id, created_user_id, name, milestone_name, id, milestone_time, status]
+2018-04-28 20:31:16.130  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.130  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_jlgy4naiuflxclsndbgp8ctu8, primary]
+2018-04-28 20:31:16.169  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_project
+2018-04-28 20:31:16.171  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, actual_duration, code, altered_user_id, created_user_id, completed, project_name, start_time, altered_time, name, expected_duration, comment, location, id, director_id]
+2018-04-28 20:31:16.172  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.173  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.209  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_standard
+2018-04-28 20:31:16.210  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [summary, created_time, code, altered_time, issue_date, altered_user_id, created_user_id, name, id, type, status]
+2018-04-28 20:31:16.210  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.210  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.240  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_function
+2018-04-28 20:31:16.240  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, function_code, function_string, altered_user_id, created_user_id, name, function_path, id, menu_id]
+2018-04-28 20:31:16.240  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.241  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_itqdcta4ccyss9hycawsgucrm, primary]
+2018-04-28 20:31:16.276  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_menu
+2018-04-28 20:31:16.277  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, menu_icon, module_id, altered_time, altered_user_id, parent_id, created_user_id, menu_path, name, id]
+2018-04-28 20:31:16.277  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.277  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_i69suv95ch4ud7irsd1lregqy, primary]
+2018-04-28 20:31:16.311  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_module
+2018-04-28 20:31:16.312  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, altered_user_id, created_user_id, name, id, module_path, module_icon]
+2018-04-28 20:31:16.312  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.312  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.342  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_operation_log
+2018-04-28 20:31:16.343  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, file_names, response_status, altered_user_id, created_user_id, params, uri, altered_time, date_time, name, client, id, username]
+2018-04-28 20:31:16.343  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.343  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.369  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_organization
+2018-04-28 20:31:16.369  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_time, altered_user_id, parent_id, created_user_id, name, description, id, organization_name]
+2018-04-28 20:31:16.369  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.370  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.397  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_role
+2018-04-28 20:31:16.397  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [role_name, role_string, created_time, code, altered_time, altered_user_id, created_user_id, name, description, id]
+2018-04-28 20:31:16.398  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.399  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.429  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_role_function
+2018-04-28 20:31:16.429  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [role_id, function_id]
+2018-04-28 20:31:16.429  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.429  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_2r3mx5cv4q1eu6i7oex4a7y65, fk_tgfnmsm51p1heid7qd9wcghxj]
+2018-04-28 20:31:16.463  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_role_user
+2018-04-28 20:31:16.464  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [user_id, role_id]
+2018-04-28 20:31:16.464  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: [fk_44m1qqntwycmydgmmdcmagdn3, fk_4rbt5lhjoqj0r268ur0gcurf2]
+2018-04-28 20:31:16.465  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_44m1qqntwycmydgmmdcmagdn3, fk_4rbt5lhjoqj0r268ur0gcurf2]
+2018-04-28 20:31:16.497  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_sys_user
+2018-04-28 20:31:16.498  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, password, code, salt, altered_time, altered_user_id, created_user_id, name, id, username]
+2018-04-28 20:31:16.498  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.498  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [primary]
+2018-04-28 20:31:16.527  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: stc.tbl_topic
+2018-04-28 20:31:16.528  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [created_time, code, altered_user_id, created_user_id, start_time, altered_time, project_id, topic_name, name, comment, location, id, director_id]
+2018-04-28 20:31:16.528  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2018-04-28 20:31:16.528  INFO 46527 --- [main] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [fk_o8dc6e1w8u4ci53fjycq0fm3q, primary]
+2018-04-28 20:31:16.530  INFO 46527 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2018-04-28 20:31:18.359  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@538e5155: startup date [Sat Apr 28 20:31:09 CST 2018]; root of context hierarchy
+2018-04-28 20:31:18.470  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryStandards]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.queryStandards(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.471  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addStandard]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.addStandard(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.472  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteStandard]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.deleteStandard(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.472  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editStandard]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.StandardController.editStandard(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.485  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addTopic]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.addTopic(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.485  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryAllTopics]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.queryAllTopics(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.485  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryTopics]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.queryTopics(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.494  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteTopic]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.deleteTopic(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.495  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editTopic]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.TopicController.editTopic(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.496  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryProjects]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.queryProjects(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.497  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryAllProjects]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.queryAllProjects(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.497  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addProject]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.addProject(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.497  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editProject]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.editProject(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.497  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteProject]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.ProjectController.deleteProject(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.499  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/queryMilestones]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.queryMilestones(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.500  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/addMilestone]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.addMilestone(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.501  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/editMilestone]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.editMilestone(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.501  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/services/deleteMilestone]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.MilestoneController.deleteMilestone(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.502  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.AuthController.login(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.503  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/resetPassword]}" onto public com.sinosteel.framework.core.web.Response com.sinosteel.web.AuthController.resetPassword(com.sinosteel.framework.core.web.Request)
+2018-04-28 20:31:18.506  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 20:31:18.507  INFO 46527 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 20:31:18.554  INFO 46527 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 20:31:18.555  INFO 46527 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 20:31:18.634  INFO 46527 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 20:31:18.896  INFO 46527 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-28 20:31:20.075  INFO 46527 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2018-04-28 20:31:20.082  INFO 46527 --- [main] com.sinosteel.FrameworkApplication       : Started FrameworkApplication in 11.842 seconds (JVM running for 16.498)
+2018-04-28 20:32:53.597  INFO 46527 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-28 20:32:53.598  INFO 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-28 20:32:53.631  INFO 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-04-28 20:45:31.512  WARN 46527 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:31.509  WARN 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:40.708  WARN 46527 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:40.711  WARN 46527 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:40.730  WARN 46527 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:40.732  WARN 46527 --- [http-nio-8000-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:42.006  WARN 46527 --- [http-nio-8000-exec-9] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:42.007  WARN 46527 --- [http-nio-8000-exec-7] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:42.009  WARN 46527 --- [http-nio-8000-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:42.012  WARN 46527 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:45.572  WARN 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:45.572  WARN 46527 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:45:45.573  WARN 46527 --- [http-nio-8000-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:03.389  WARN 46527 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:03.389  WARN 46527 --- [http-nio-8000-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:03.396  WARN 46527 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:06.967  WARN 46527 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:06.968  WARN 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:06.973  WARN 46527 --- [http-nio-8000-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:12.171  WARN 46527 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:12.171  WARN 46527 --- [http-nio-8000-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:12.179  WARN 46527 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:14.228  WARN 46527 --- [http-nio-8000-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:14.228  WARN 46527 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:14.229  WARN 46527 --- [http-nio-8000-exec-9] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:47.604  WARN 46527 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:47.604  WARN 46527 --- [http-nio-8000-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:46:47.604  WARN 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:01.253  WARN 46527 --- [http-nio-8000-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:01.252  WARN 46527 --- [http-nio-8000-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:01.257  WARN 46527 --- [http-nio-8000-exec-9] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:02.313  WARN 46527 --- [http-nio-8000-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:02.313  WARN 46527 --- [http-nio-8000-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:02.315  WARN 46527 --- [http-nio-8000-exec-7] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:10.532  WARN 46527 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:10.534  WARN 46527 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 20:47:10.535  WARN 46527 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
