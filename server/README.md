@@ -28,12 +28,13 @@ chmod +x /usr/local/bin/docker-compose
 ### 注意事项
 
 1. 如碰到spring-boot:run编译时间过长的问题，卡在随机数产生，可通过以下步骤解决：
-	
 ```
 vim $JAVA_home/jre/lib/security/java.security
 ```
 找到`securerandom.source = file:/dev/random`这一行，修改为:
 `securerandom.source = file:/dev/urandom`
+
+2. 未完待续...大家在部署过程中有什么遇到的问题以及解决办法都可以分享出来，供所有同学参考。
 
 
 
