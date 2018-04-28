@@ -1173,3 +1173,6 @@
 2018-04-28 20:47:10.532  WARN 46527 --- [http-nio-8000-exec-3] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
 2018-04-28 20:47:10.534  WARN 46527 --- [http-nio-8000-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
 2018-04-28 20:47:10.535  WARN 46527 --- [http-nio-8000-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2018-04-28 21:31:50.858  INFO 46527 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@538e5155: startup date [Sat Apr 28 20:31:09 CST 2018]; root of context hierarchy
+2018-04-28 21:31:50.878  INFO 46527 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-28 21:31:50.897  INFO 46527 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
