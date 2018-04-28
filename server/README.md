@@ -1,7 +1,44 @@
-# Sinosteel框架修改
+# Server模块
+
+## 后端部署步骤
+
+### 准备工作
+首先确保以下已安装
+
+* docker
+* maven
+* java
+* docker-compose.
+
+如果没有docker-compose命令，可以用以下命令获取：
+```
+curl -L https://github.com/docker/compose/releases/download/1.21.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+### 部署工作
+
+1. 进入server目录,执行`docker-compose up -d`,启动 mysql 镜像。
+2. 执行命令
+`docker exec -i mymysql mysql -uroot -pmysql stc < framework.sql `
+   将framework.sql导入数据库stc中。
+3. 执行`mvn clean package -DskipTests` 打包项目
+4. 执行`mvn spring-boot:run` 启动项目up
+
+
+### 注意事项
+
+1. 如碰到spring-boot:run编译时间过长的问题，卡在随机数产生，可通过以下步骤解决：
+	
+```
+vim $JAVA_home/jre/lib/security/java.security
+```
+找到`securerandom.source = file:/dev/random`这一行，修改为:
+`securerandom.source = file:/dev/urandom`
+
+
 
 ## 代码整合
-framework-example中的将Project和Knowledge整合进framework中，代码结构如下：
+代码结构如下：
 ```aidl
 ├── java
 │   └── com
@@ -43,27 +80,3 @@ framework-example中的将Project和Knowledge整合进framework中，代码结�
     │   └── system.properties              --系统配置
     └── structure.json                     --整个框架的结构
 ```
-## 删除部分模块
-- 删除Shiro模块
-    - 做登录验证和权限认证的模块
-- 删除Redis模块
-    - 做数据缓存的模块
-    - 主要是缓存一些查询结果，下次查询更快
-## 项目运行
-- 在项目根目录执行`mvn clean package -DskipTests`打包
-- 如果没有mysql数据库，执行`docker-compose up -d`启动mysql镜像，docker-compose.yml文件如下：
-```yaml
-version: '3.2'
-
-services:
-  mysql:
-    image: 'mysql:latest'
-    ports:
-      - '33006:3306'
-    volumes:
-      - '~/mnt/mysql/:/var/lib/mysql/'
-    environment:
-      - MYSQL_ROOT_PASSWORD=mysql
-      - MYSQL_DATABASE=fitech
-```
-- 执行 `mvn spring-boot:run`启动项目
