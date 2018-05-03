@@ -34,7 +34,7 @@ vim $JAVA_home/jre/lib/security/java.security
 找到`securerandom.source = file:/dev/random`这一行，修改为:
 `securerandom.source = file:/dev/urandom`
 
-2.Java 请务必使用1.8，否则可能导致编译失败。
+2. Java 请务必使用1.8，否则可能导致编译失败。
 
 2. 未完待续...大家在部署过程中有什么遇到的问题以及解决办法都可以分享出来，供所有同学参考。
 
