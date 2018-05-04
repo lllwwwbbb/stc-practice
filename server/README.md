@@ -24,6 +24,28 @@ chmod +x /usr/local/bin/docker-compose
 3. 执行`mvn clean package -DskipTests` 打包项目
 4. 执行`mvn spring-boot:run` 启动项目up
 
+### 命令解释
+#### dokcer-compose
+docker-compose 在此例中起到快速创建数据库的作用。我们可以看看docker-compose.yml文件
+
+```
+version: '3.2'
+
+services:
+  mysql:
+    image: 'mysql:5.7.21'
+    container_name: 'mymysql'
+    ports:
+      - '33006:3306'
+    volumes:
+      - '~/mnt/mysql/:/var/lib/mysql/'
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql
+      - MYSQL_DATABASE=stc
+    command: mysqld --lower_case_table_names=1 --skip-ssl
+
+```
+其中创建了一个mysql容器，并且规定了其端口以及其他属性，并且创建了一个名为stc的database。需要重点注意的是volumes一行指定将该数据库的内容挂载在本机的～/mnt/mysql/里，所以本机会自动创建该目录并存储mysql相关信息，这样做的好处是重启docker时保证mysql的内容不会丢失，同时大家注意不要手动去删除该目录。
 
 ### 注意事项
 
