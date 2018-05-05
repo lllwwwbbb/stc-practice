@@ -19,10 +19,10 @@ public class EntrustController extends BaseController
 //    private EntrustService entrustService;
 
     @RequestMapping(method = RequestMethod.GET)
-//    public Entrust queryEntrusts()
+//    public String queryEntrusts()
     public String queryEntrusts()
     {
-//        Entrust entrust = entrustService.queryEntrusts();
+//        String entrust = entrustService.queryEntrusts();
 //
 //        return entrust;
         return "return current Entrusts";
