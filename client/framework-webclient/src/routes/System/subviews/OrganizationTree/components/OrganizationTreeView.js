@@ -9,7 +9,6 @@ const Option = Select.Option;
 //控制按钮状态
 /*TODO*///委托的状态如何确定？由后台发消息？
 let isDisabled = false;//const isDisabled = false;
-import SubItemContainer from 'common/basic/containers/SubItemContainer';
 
 import OrganizationTreeContainer from '../../../containers/OrganizationTreeContainer';
 

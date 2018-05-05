@@ -17,8 +17,6 @@ import Logo from './assets/logo.png';
 
 import tabsmap from 'routes/tabsmap';
 
-import ItemContainer from 'common/basic/containers/ItemContainer';
-
 import {logoutService, resetPasswordService} from 'services';
 import {sysFetch} from 'utils/FetchUtil';
 
