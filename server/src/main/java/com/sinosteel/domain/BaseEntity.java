@@ -3,6 +3,7 @@ package com.sinosteel.domain;
 import com.alibaba.fastjson.JSON;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
@@ -37,6 +38,7 @@ public class BaseEntity implements Serializable
 	
 	@Column(name = "ALTERED_USER_ID")
 	private String alteredUserId;
+
 
 	public String getId() {
 		return id;

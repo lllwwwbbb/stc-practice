@@ -8,17 +8,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class EntrustService extends BaseService<Entrust> {
 
-    static Entrust onlyme = new Entrust();
     @Autowired
     private EntrustRepository entrustRepository;
 
     public Entrust queryEntrusts() {
-        return onlyme;
+        Entrust entrust = entrustRepository.findById("1");
+        if ( entrust == null) {
+            entrust = new Entrust();
+            entrust.setId("1");
+            return entrust;
+        }
+        return entrust;
     }
 
-    public void updateEntrusts(String content) throws Exception {
-        onlyme.setEntrustString(content);
-        entrustRepository.save(onlyme);
+    public void updateEntrusts(Entrust entrust) throws Exception {
+        entrust.setId("1");
+        entrustRepository.save(entrust);
     }
 
     public void checkEntrustsPass() {
@@ -29,10 +34,10 @@ public class EntrustService extends BaseService<Entrust> {
         //调用流程引擎
     }
 
-    public void pushEntrusts(String content) throws Exception
+    public void pushEntrusts(Entrust entrust) throws Exception
     {
         //调用流程引擎
-        updateEntrusts(content);
+        updateEntrusts(entrust);
     }
 
 }

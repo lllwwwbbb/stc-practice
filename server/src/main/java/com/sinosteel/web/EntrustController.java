@@ -29,7 +29,7 @@ public class EntrustController extends BaseController
     }
 
     @RequestMapping(method = RequestMethod.PUT)
-    public ResponseEntity<Void> updateEntrust(@RequestBody String entrust)
+    public ResponseEntity<Void> updateEntrust(@RequestBody Entrust entrust)
     {
 
         try {
