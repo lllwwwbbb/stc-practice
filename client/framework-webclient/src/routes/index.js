@@ -26,6 +26,10 @@ export const createRoutes = (store) =>
         childRoutes : 
         [
             {
+                path        : '/login',
+                component   : LoginContainer(store)
+            },
+            {
                 path        : '/index',
                 component   : CoreLayoutContainer(store)
             }
