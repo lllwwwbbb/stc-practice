@@ -1,21 +1,28 @@
+//组件导入区
 import React, {Component, PropTypes} from 'react';
 
-import {Row, Col, Card, Tabs, Layout, Form} from 'antd';
+import {Row, Col, Card, Tabs, Select, Button, Layout, Form} from 'antd';
 const { Header, Sider, Content } = Layout;
 const FormItem = Form.Item;
+const Option = Select.Option;
 
+//控制按钮状态
+/*TODO*///委托的状态如何确定？由后台发消息？
+let isDisabled = false;//const isDisabled = false;
 import SubItemContainer from 'common/basic/containers/SubItemContainer';
 
 import OrganizationTreeContainer from '../../../containers/OrganizationTreeContainer';
 import OrganizationListView from './OrganizationListView';
 
+
+//核心代码区
 export default class OrganizationTreeView extends Component
 {
 	constructor(props)
 	{
 		super(props);
 
-		this.state = 
+		this.state =
 		{
 			parentId: ''
 		}
@@ -28,8 +35,63 @@ export default class OrganizationTreeView extends Component
 			parentId: parentId
 		})
 	}
+	//设定props默认值，可以用来接受后台消息
+	/*
+	getDefaultProps() {
+		return {
+			name:'xyz',
+			ID:'151220134'
+		}
+	}
+	*/
+	static defaultProps = {
+		name:'xyz',
+		ID:'151220134',
+		isWTSubmitted:true,
+	}
 
-	render()
+	render(){
+		//const standard = this.props.item;//获取的消息？
+			/*const formItemLayout =
+				{
+					labelCol: { span: 6 },
+					wrapperCol: { span: 14 },
+				};//设置加载tailFormItemLayout（输入框，单选按钮，多选框，进度条）的样式
+			*/
+    //const isDisabled=(props.weituo);
+
+			return(
+				<Form layout='vertical'>
+					<Card title='基本信息'>
+						<Row>
+						<Col span={12}>
+							<FormItem label="姓名">
+								{this.props.name}
+							</FormItem>
+						</Col>
+						<Col span={12}>
+							<FormItem label="学号">
+								{this.props.ID}
+							</FormItem>
+						</Col>
+						</Row>
+					</Card>
+					<FormItem>
+					</FormItem>
+					<FormItem>
+						<div>
+							<Row gutter={16}>
+								<Col span={6}></Col>
+								<Col span={6} offset={2}><Button type="primary" disabled={!this.props.isWTSubmitted}>通过</Button></Col>
+								<Col span={6}><Button htmlType="deny" disabled={!this.props.isWTSubmitted}>否决</Button></Col>
+								<Col span={6}></Col>
+							</Row>
+						</div>
+					</FormItem>
+				</Form>
+			); //this.renderForm(formItems);
+		}
+	/*render()//主要改这个里面的内容，react的语法，怎么插入按钮、文本框？
 	{
 		const minHeight = '850px';
 
@@ -50,5 +112,9 @@ export default class OrganizationTreeView extends Component
 				</Col>
 			</Row>
 		);
-	}
+	}*/
 }
+
+//组件样式区
+
+//注册启动区

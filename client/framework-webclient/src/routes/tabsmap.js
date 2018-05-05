@@ -11,24 +11,12 @@ import ItemContainer from 'common/basic/containers/ItemContainer';
 const tabsmap = 
 [
     {
-        path: '/project_list',
-        component: ItemContainer('project', ProjectListView)
-    },
-    {
-        path: '/standard_list',
-        component: ItemContainer('standard', StandardListView)
-    },
-    {
-        path: '/user_list',
+        path: '/user_pannel',
         component: UserTreeView
     },
     {
-        path: '/organization_tree',
+        path: '/admin_pannel',
         component: OrganizationTreeView
-    },
-    {
-        path: '/role_list',
-        component: ItemContainer('role', RoleListView)
     }
 ]
 
