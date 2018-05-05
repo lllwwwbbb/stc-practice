@@ -16,18 +16,23 @@ export default class Blank extends Component
 	componentWillMount()
 	{
 		const sysUserString = sessionStorage.getItem('sysUser');
-		if(sysUserString)
+		getStore().dispatch(setModules([
 		{
-			const sysUser = JSON.parse(sysUserString);
-			getStore().dispatch(setSysUser(sysUser));
-			getStore().dispatch(setModules(sysUser.modules));
-
-			this.props.router.replace('/index');
-		}
-		else
+			code: "U-C",
+			id: "0",
+			menuIcon: "idcard",
+			menuPath: "/user_pannel",
+			name: "委托(客户)"
+		},
 		{
-			this.props.router.replace('/login');
+			code: "C-C",
+			id: "1",
+			menuIcon: "idcard",
+			menuPath: "/admin_pannel",
+			name: "委托(工作人员)"
 		}
+		]));
+		this.props.router.replace('/index');
 	}
 
 	render()
