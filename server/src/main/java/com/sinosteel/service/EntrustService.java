@@ -16,6 +16,7 @@ public class EntrustService extends BaseService<Entrust> {
         if ( entrust == null) {
             entrust = new Entrust();
             entrust.setId("1");
+            entrust.setEntrustString("");
             return entrust;
         }
         return entrust;
