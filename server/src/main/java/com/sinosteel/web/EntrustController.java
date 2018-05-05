@@ -1,6 +1,8 @@
 package com.sinosteel.web;
 
+import com.sinosteel.domain.Entrust;
 import com.sinosteel.framework.core.web.ResponseType;
+import com.sinosteel.service.EntrustService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,17 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EntrustController extends BaseController
 {
-//    @Autowired
-//    private EntrustService entrustService;
+    @Autowired
+    private EntrustService entrustService;
 
     @RequestMapping(method = RequestMethod.GET)
-//    public String queryEntrusts()
-    public String queryEntrusts()
+    public Entrust queryEntrusts()
     {
-//        String entrust = entrustService.queryEntrusts();
-//
-//        return entrust;
-        return "return current Entrusts";
+        Entrust entrust = entrustService.queryEntrusts();
+
+        return entrust;
     }
 
     @RequestMapping(method = RequestMethod.PUT)
@@ -33,7 +33,7 @@ public class EntrustController extends BaseController
     {
 
         try {
-//            entrustService.updateEntrusts(entrust);
+            entrustService.updateEntrusts(entrust);
             return ResponseEntity.<Void>ok().build();
         }
         catch (Exception e)
