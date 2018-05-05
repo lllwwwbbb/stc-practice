@@ -1,4 +1,4 @@
-package com.test;
+package com.sinosteel.activiti;
 
 import org.activiti.engine.*;
 import org.activiti.engine.runtime.ProcessInstance;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ActivitiController {
-    private static final Logger logger = LoggerFactory.getLogger(com.activitiwithspring.ActivitiController.class);
+    private static final Logger logger = LoggerFactory.getLogger(com.sinosteel.activiti.ActivitiController.class);
 
     @Autowired
     private RuntimeService runtimeService;

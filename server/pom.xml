@@ -150,11 +150,11 @@
         </dependency>  
         
         <!-- activiti -->
-        <!--<dependency>-->
-			<!--<groupId>org.activiti</groupId>-->
-			<!--<artifactId>spring-boot-starter-basic</artifactId>-->
-			<!--<version>5.17.0</version>-->
-		<!--</dependency>-->
+        <dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>spring-boot-starter-basic</artifactId>
+			<version>5.17.0</version>
+		</dependency>
            
     </dependencies>
 	<build>

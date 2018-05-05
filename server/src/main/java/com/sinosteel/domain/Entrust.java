@@ -1,7 +1,7 @@
 package com.sinosteel.domain;
 
 import javax.persistence.*;
-
+import com.sinosteel.activiti.ActivitiController;
 @Entity
 @Table(name = "TBL_SYS_Entrust")
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -9,11 +9,10 @@ public class Entrust extends BaseEntity{
     @Column(name = "ENTRUST")
     private String entrustString;
 
-    @Column(name = "ENTRUSTID")
-    private String entrustId;
 
     public Entrust() {
-        this.entrustId = "1";
+        this.setId("1");
+
     }
 
     public String getEntrustString() {
