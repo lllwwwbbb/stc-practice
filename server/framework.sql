@@ -44,6 +44,22 @@ CREATE TABLE `act_evt_log` (
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `tbl_sys_entrust`
+--
+
+CREATE TABLE `tbl_sys_entrust`(
+  `ENTRUST` text COLLATE utf8_bin DEFAULT NULL,
+  `ENTRUSTID` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `ID` varchar(255) COLLATE utf8_bin NOT NULL,
+  `CODE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `NAME` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `CREATED_TIME` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `CREATED_USER_ID` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `ALTERED_TIME` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `ALTERED_USER_ID` varchar(255) COLLATE utf8_bin DEFAULT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
 -- 表的结构 `act_ge_bytearray`
 --
 
@@ -1163,6 +1179,8 @@ INSERT INTO `tbl_topic` (`id`, `altered_time`, `altered_user_id`, `code`, `creat
 ('7', NULL, NULL, '7', NULL, '0', '9', '项目9---课题7', NULL, NULL, NULL, '北京', '2017-06-20'),
 ('8', NULL, NULL, '8', NULL, '0', '6', '项目6---课题8', NULL, NULL, NULL, '北京', '2017-02-14'),
 ('9', NULL, NULL, '9', NULL, '0', '3', '项目3---课题9', NULL, NULL, NULL, '上海', '2017-02-28');
+
+
 
 --
 -- Indexes for dumped tables
