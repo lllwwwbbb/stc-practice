@@ -9,7 +9,6 @@ let isDisabled = false;
 import SubItemContainer from 'common/basic/containers/SubItemContainer';
 
 import OrganizationTreeContainer from 'routes/System/containers/OrganizationTreeContainer';
-import UserListView from './UserListView';
 
 export default class UserTreeView extends Component
 {

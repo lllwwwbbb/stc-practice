@@ -12,7 +12,6 @@ let isDisabled = false;//const isDisabled = false;
 import SubItemContainer from 'common/basic/containers/SubItemContainer';
 
 import OrganizationTreeContainer from '../../../containers/OrganizationTreeContainer';
-import OrganizationListView from './OrganizationListView';
 
 
 //核心代码区
