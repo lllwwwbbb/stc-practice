@@ -30,18 +30,24 @@ public class EntrustService extends BaseService<Entrust> {
         entrustRepository.save(entrust);
     }
 
-    public void passEntrust() {
+    public void passEntrust()
+    {
         activitiController.Check(true);
     }
 
-    public void rejectEntrust() {
+    public void rejectEntrust()
+    {
         activitiController.Check(false);
     }
 
     public void submitEntrust()
     {
-        //调用流程引擎
         activitiController.Submit();
+    }
+
+    public String getEntrustState()
+    {
+        return activitiController.GetProcessState();
     }
 
 }

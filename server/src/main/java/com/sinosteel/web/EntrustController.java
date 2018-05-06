@@ -43,6 +43,11 @@ public class EntrustController extends BaseController
         }
 
     }
+    @RequestMapping(value = "/state", method = RequestMethod.GET)
+    public String getEntrustState()
+    {
+        return entrustService.getEntrustState();
+    }
 
     @RequestMapping(value = "/state/submit", method = RequestMethod.GET)
     public ResponseEntity<Void> submitEntrust()
