@@ -11,18 +11,28 @@ public class EntrustService extends BaseService<Entrust> {
     @Autowired
     private EntrustRepository entrustRepository;
 
-    static ActivitiController activitiController = new ActivitiController();
+    private static ActivitiController activitiController = new ActivitiController();
+
+    //为了使每次初始化时一个新的委托，暂时添加一个bool变量
+    private boolean isInitial = true;
 
     public Entrust queryEntrusts() {
-        Entrust entrust = entrustRepository.findById("1");
-        if ( entrust == null) {
+
+        if (isInitial)
+        {
+            isInitial = false;
+            //第一次访问时,初始化引擎
+            activitiController.deploy();
             activitiController.startProcess("1");
-            entrust = new Entrust();
+            //新建一个委托并存入数据库中
+            Entrust entrust = new Entrust();
             entrust.setId("1");
             entrust.setEntrustString("");
-            return entrust;
+            entrustRepository.save(entrust);
         }
-        return entrust;
+
+
+        return entrustRepository.findById("1");
     }
 
     public void updateEntrusts(Entrust entrust) throws Exception {

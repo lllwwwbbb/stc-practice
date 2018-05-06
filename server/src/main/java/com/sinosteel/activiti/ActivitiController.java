@@ -31,7 +31,7 @@ public class ActivitiController {
         repositoryService.createDeployment()
                 .addClasspathResource("processes/entrust.bpmn20.xml")
                 .deploy();
-        System.out.println(processEngine.getName());
+        System.out.println("deploy success, processEngine name: " + processEngine.getName());
     }
 
     //流程引擎启动
