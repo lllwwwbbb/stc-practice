@@ -23,7 +23,7 @@ public class EntrustService extends BaseService<Entrust> {
             isInitial = false;
             //第一次访问时,初始化引擎
             activitiController.deploy();
-            activitiController.startProcess("1");
+            activitiController.startProcess("entrust");
             //新建一个委托并存入数据库中
             Entrust entrust = new Entrust();
             entrust.setId("1");
