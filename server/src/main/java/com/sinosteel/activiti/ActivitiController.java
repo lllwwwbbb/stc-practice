@@ -65,9 +65,12 @@ public class ActivitiController {
     //提交审核
     public void Submit()
     {
-        Task task=processEngine.getTaskService()
-                .createTaskQuery().taskAssignee("客户").singleResult();
-        processEngine.getTaskService().complete(task.getId());
+        List<Task> tasks=processEngine.getTaskService()
+                .createTaskQuery().taskAssignee("客户").list();
+        for (Task task : tasks) {
+            if (task.getProcessInstanceId() == ProcessInstanceId)
+                processEngine.getTaskService().complete(task.getId());
+        }
        // System.out.println("finished");
     }
     //评审审核
