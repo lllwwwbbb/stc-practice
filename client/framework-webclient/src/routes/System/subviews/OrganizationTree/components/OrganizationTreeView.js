@@ -20,8 +20,12 @@ export default class OrganizationTreeView extends Component
 
 		this.state =
 		{
-			parentId: ''
+			parentId: '',
+			name: 'name',
+			ID: 'ID'
 		}
+
+		this.getData=this.getData.bind(this);
 	}
 
 	setParentId = (parentId) =>
@@ -40,11 +44,45 @@ export default class OrganizationTreeView extends Component
 		}
 	}
 	*/
-	static defaultProps = {
-		name:'xyz',
-		ID:'151220134',
-		isWTSubmitted:true,
+	// static defaultStates = {
+	// 	name:'xyz',
+	// 	ID:'151220134',
+	// 	isWTSubmitted:true,
+	// }
+
+	getData(){
+		return fetch('http://127.0.0.1:8000/entrust', 
+			{
+				method: "GET"
+			})
+			.then((res) => 
+			{
+				if(res.ok)
+				{
+					return res.json();
+				}
+				else
+				{
+					return Promise.reject();
+				}
+			})
+			.then(res=>
+			{
+				this.setState({name:res.entrustString})
+				this.setState({ID:res.id})
+				// debugger
+			})
+			
 	}
+
+	componentDidMount()
+	{
+		//debugger
+		var res = this.getData();
+		res.then((json) => {
+		});
+	}
+
 
 	render(){
 		//const standard = this.props.item;//获取的消息？
@@ -58,16 +96,16 @@ export default class OrganizationTreeView extends Component
 
 			return(
 				<Form layout='vertical'>
-					<Card title='基本信息'>
+					<Card title='委托信息'>
 						<Row>
 						<Col span={12}>
-							<FormItem label="姓名">
-								{this.props.name}
+							<FormItem label="委托名称">
+								{this.state.name}
 							</FormItem>
 						</Col>
 						<Col span={12}>
-							<FormItem label="学号">
-								{this.props.ID}
+							<FormItem label="委托ID">
+								{this.state.ID}
 							</FormItem>
 						</Col>
 						</Row>
