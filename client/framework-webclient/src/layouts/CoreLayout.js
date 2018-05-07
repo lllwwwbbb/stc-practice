@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import Topnav from 'COMPONENTS/Topnav'
 import 'STYLES/antd.min.css'
 import 'STYLES/core.scss'
 import './CoreLayout.scss'
@@ -189,7 +188,7 @@ export default class CoreLayout extends Component
 		{
 			showResetPasswordModal: false
 		});
-	}
+	};
 
 	saveResetPasswordFormRef = (form) => 
 	{

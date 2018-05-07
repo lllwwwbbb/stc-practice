@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
 import {getStore} from 'STORE/globalStore';
-import {setSysUser} from 'routes/Login/containers/LoginContainer';
 import {setModules} from 'layouts/store/CoreLayoutStore';
 
 import './Blank.scss';
@@ -15,7 +14,7 @@ export default class Blank extends Component
 
 	componentWillMount()
 	{
-		const sysUserString = sessionStorage.getItem('sysUser');
+		debugger
 		getStore().dispatch(setModules([
 		{
 			code: "U-C",
