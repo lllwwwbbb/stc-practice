@@ -1,4 +1,4 @@
-package com.sinosteel.activiti;
+package com.test;
 
 import org.activiti.engine.*;
 import org.activiti.engine.runtime.ProcessInstance;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ActivitiController {
-    private static final Logger logger = LoggerFactory.getLogger(com.sinosteel.activiti.ActivitiController.class);
+    private static final Logger logger = LoggerFactory.getLogger(com.activitiwithspring.ActivitiController.class);
 
     @Autowired
     private RuntimeService runtimeService;
@@ -23,22 +23,24 @@ public class ActivitiController {
     private HistoryService historyService;
     ProcessEngine processEngine;
     RepositoryService repositoryService;
-    String ProcessInstanceId;
-    //deploy the dpmn
+   // String ProcessInstanceId;
+    //ProcessInstance pi;
+    //部署整个引擎
     public void deploy() {
         processEngine = ProcessEngines.getDefaultProcessEngine();
         repositoryService = processEngine.getRepositoryService();
         repositoryService.createDeployment()
                 .addClasspathResource("processes/entrust.bpmn20.xml")
                 .deploy();
-        System.out.println("deploy success, processEngine name: " + processEngine.getName());
+        System.out.println(processEngine.getName());
     }
 
-    //流程引擎启动
-    public void startProcess(String id){
+    //开启一个流程实例，因为默认只有一个合同，所以参数为entrust，返回这个流程实例的id
+    public String startProcess(String id){
         ProcessInstance pi=processEngine.getRuntimeService().startProcessInstanceByKey(id);
-       ProcessInstanceId = new String(pi.getProcessInstanceId());
-     //   System.out.println("pid:"+pi.getId()+",activitiId:"+pi.getActivityId()+" "+pi.getProcessInstanceId());
+        String processInstanceId = new String(pi.getProcessInstanceId());
+        return processInstanceId;
+        //   System.out.println("pid:"+pi.getId()+",activitiId:"+pi.getActivityId()+" "+pi.getProcessInstanceId());
     }
     //查询任务
    public String GetTaskState(String name)
@@ -51,35 +53,42 @@ public class ActivitiController {
         }
         return st;
     }
-    //查询流程
-    public String GetProcessState()
+    //通过流程实例的id查询流程实例的状态，参数为流程实例的id
+    public String GetProcessState(String processInstanceId)
     {
         ProcessInstance pi=processEngine.getRuntimeService().createProcessInstanceQuery()
-                .processInstanceId(ProcessInstanceId).singleResult();
+                .processInstanceId(processInstanceId).singleResult();
+        //ProcessInstance pi = pis.get(0);
         if(pi!=null)
         {
-            return "running";//pi.getActivityId();
+            //return "running";//
+            return pi.getActivityId();
         }
         else return "finished";
     }
-    //提交审核
-    public void Submit()
+    //因为目前没有客户表，所以默认只有一个用户，通过流程实例的id和客户名（默认为客户）提交审核
+    //参数为流程实例id（由startprocess返回）
+    public void Submit(String processInstanceId)
     {
-        List<Task> tasks=processEngine.getTaskService()
-                .createTaskQuery().taskAssignee("客户").list();
-        for (Task task : tasks) {
-            if (task.getProcessInstanceId() == ProcessInstanceId)
-                processEngine.getTaskService().complete(task.getId());
-        }
+        List<ProcessInstance> pis=processEngine.getRuntimeService().createProcessInstanceQuery()
+                .processInstanceId(processInstanceId).list();
+        ProcessInstance pi = pis.get(0);
+       List<Task> tasks=processEngine.getTaskService()
+                .createTaskQuery().taskAssignee("客户").processInstanceId(processInstanceId).list();
+        Task task = tasks.get(0);
+        processEngine.getTaskService().complete(task.getId());
        // System.out.println("finished");
     }
     //评审审核
-    public void Check(Boolean pass)
+    //因为目前没有客户表，所以默认只有一个用户，通过流程实例的id和工作人员名（默认为"市场部工作人员"）评审审核
+    //参数为Boolean类型的pass（同意为true，不同意为false），流程实例id（由startprocess返回）
+    public void Check(Boolean pass,String processInstanceId)
     {
         Map<String,Object> variables1=new HashMap<String, Object>();
         variables1.put("Approval",pass);
-        Task task=processEngine.getTaskService()
-                .createTaskQuery().taskAssignee("市场部工作人员").singleResult();
+        List<Task> tasks=processEngine.getTaskService()
+                .createTaskQuery().taskAssignee("市场部工作人员").processInstanceId(processInstanceId).list();
+        Task task = tasks.get(0);
         processEngine.getTaskService().complete(task.getId(),variables1);
        // System.out.println("finished");
     }
