@@ -29,16 +29,19 @@ public class EntrustService extends BaseService<Entrust> {
         entrustRepository.save(entrust);
     }
 
+    //委托审核通过
     public void checkEntrustsPass() {
         activitiController.Check(true);
     }
 
+    //委托审核未通过
     public void checkEntrustsFail() {
         activitiController.Check(false);
     }
 
-    public void pushEntrusts(Entrust entrust) throws Exception
+    public void submitEntrusts(Entrust entrust) throws Exception
     {
+        //提交委托
         //调用流程引擎
         activitiController.Submit();
         updateEntrusts(entrust);
