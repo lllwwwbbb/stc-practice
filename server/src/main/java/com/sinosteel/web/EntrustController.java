@@ -43,4 +43,29 @@ public class EntrustController extends BaseController
         }
 
     }
+    @RequestMapping(value = "/state", method = RequestMethod.GET)
+    public String getEntrustState()
+    {
+        return entrustService.getEntrustState();
+    }
+
+    @RequestMapping(value = "/state/submit", method = RequestMethod.GET)
+    public ResponseEntity<Void> submitEntrust()
+    {
+        entrustService.submitEntrust();
+        return ResponseEntity.<Void>ok().build();
+    }
+
+    @RequestMapping(value = "/state/pass", method = RequestMethod.GET)
+    public ResponseEntity<Void> passEntrust()
+    {
+        entrustService.passEntrust();
+        return ResponseEntity.<Void>ok().build();
+    }
+    @RequestMapping(value = "/state/reject", method = RequestMethod.GET)
+    public ResponseEntity<Void> rejectEntrust()
+    {
+        entrustService.rejectEntrust();
+        return ResponseEntity.<Void>ok().build();
+    }
 }

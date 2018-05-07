@@ -11,40 +11,50 @@ public class EntrustService extends BaseService<Entrust> {
     @Autowired
     private EntrustRepository entrustRepository;
 
-    static ActivitiController activitiController = new ActivitiController();
+    @Autowired
+    private ActivitiController activitiController;
 
+    String actid = new String();
+    boolean initial = true;
+    //为了使每次初始化时一个新的委托，暂时添加一个bool变量
     public Entrust queryEntrusts() {
-        Entrust entrust = entrustRepository.findById("1");
-        if ( entrust == null) {
-            activitiController.startProcess("1");
-            entrust = new Entrust();
-            entrust.setId("1");
+        if(initial)
+        {
+            initial = false;
+            activitiController.deploy();
+            actid = activitiController.startProcess("entrust");
+            Entrust entrust = new Entrust();
+            entrust.setId(actid);
+            entrustRepository.save(entrust);
             return entrust;
         }
-        return entrust;
+        return entrustRepository.findById(actid);
     }
 
     public void updateEntrusts(Entrust entrust) throws Exception {
-        entrust.setId("1");
         entrustRepository.save(entrust);
     }
 
-    //委托审核通过
-    public void checkEntrustsPass() {
-        activitiController.Check(true);
-    }
-
-    //委托审核未通过
-    public void checkEntrustsFail() {
-        activitiController.Check(false);
-    }
-
-    public void submitEntrusts(Entrust entrust) throws Exception
+    public void passEntrust()
     {
-        //提交委托
-        //调用流程引擎
-        activitiController.Submit();
-        updateEntrusts(entrust);
+        //activitiController.Check(true);
+        activitiController.Check(true,actid);
+    }
+
+    public void rejectEntrust()
+    {
+        //activitiController.Check(false);
+        activitiController.Check(true,actid);
+    }
+
+    public void submitEntrust()
+    {
+        activitiController.Submit(actid);
+    }
+
+    public String getEntrustState()
+    {
+        return activitiController.GetProcessState(actid);
     }
 
 }
