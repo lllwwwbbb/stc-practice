@@ -10,8 +10,6 @@ const Option = Select.Option;
 /*TODO*///委托的状态如何确定？由后台发消息？
 let isDisabled = false;//const isDisabled = false;
 
-import OrganizationTreeContainer from '../../../containers/OrganizationTreeContainer';
-
 
 //核心代码区
 export default class OrganizationTreeView extends Component

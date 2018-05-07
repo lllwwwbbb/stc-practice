@@ -6,8 +6,6 @@ const FormItem = Form.Item;
 const Option = Select.Option;
 let isDisabled = false;
 
-import OrganizationTreeContainer from 'routes/System/containers/OrganizationTreeContainer';
-
 export default class UserTreeView extends Component
 {
 	constructor(props)
