@@ -48,7 +48,7 @@ CREATE TABLE `act_evt_log` (
 --
 
 CREATE TABLE `tbl_sys_entrust`(
-  `ENTRUST` text COLLATE utf8_bin DEFAULT NULL,
+  `ENTRUST` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `ID` varchar(255) COLLATE utf8_bin NOT NULL,
   `CODE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `NAME` varchar(255) COLLATE utf8_bin DEFAULT NULL,
