@@ -60,6 +60,7 @@ export default class UserTreeView extends Component
 			.then(res=>
 			{
 				this.setState({name:res.entrustString})
+				debugger
 				this.setState({ID:res.id})
 				// debugger
 			})
@@ -69,10 +70,8 @@ export default class UserTreeView extends Component
 	handleClick(){
 		let obj = {
 			entrustString: this.state.name,
-			id: "1"
+			id: this.state.ID
 		};
-
-		// debugger
   
 		fetch('http://127.0.0.1:8000/entrust', 
 		{  
