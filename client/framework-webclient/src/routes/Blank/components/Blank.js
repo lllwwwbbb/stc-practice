@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 
 import {getStore} from 'STORE/globalStore';
+import {setSysUser} from 'routes/Login/containers/LoginContainer';
 import {setModules} from 'layouts/store/CoreLayoutStore';
 
 import './Blank.scss';
@@ -14,24 +15,19 @@ export default class Blank extends Component
 
 	componentWillMount()
 	{
-		debugger
-		getStore().dispatch(setModules([
+		const sysUserString = sessionStorage.getItem('sysUser');
+		if(sysUserString)
 		{
-			code: "U-C",
-			id: "0",
-			menuIcon: "idcard",
-			menuPath: "/user_pannel",
-			name: "委托(客户)"
-		},
-		{
-			code: "C-C",
-			id: "1",
-			menuIcon: "idcard",
-			menuPath: "/admin_pannel",
-			name: "委托(工作人员)"
+			const sysUser = JSON.parse(sysUserString);
+			getStore().dispatch(setSysUser(sysUser));
+			getStore().dispatch(setModules(sysUser.modules));
+
+			this.props.router.replace('/index');
 		}
-		]));
-		this.props.router.replace('/index');
+		else
+		{
+			this.props.router.replace('/login');
+		}
 	}
 
 	render()

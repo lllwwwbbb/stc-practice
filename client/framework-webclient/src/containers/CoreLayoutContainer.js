@@ -5,7 +5,7 @@ const mapStateToProps = (state) => (
 {
   	modules: state.system.modules,
   	sysUser: state.system.sysUser
-});
+})
 
 export default (store) =>
 {	

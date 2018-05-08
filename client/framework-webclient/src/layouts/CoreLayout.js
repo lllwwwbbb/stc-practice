@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import Topnav from 'COMPONENTS/Topnav'
 import 'STYLES/antd.min.css'
 import 'STYLES/core.scss'
 import './CoreLayout.scss'
@@ -15,6 +16,8 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Logo from './assets/logo.png';
 
 import tabsmap from 'routes/tabsmap';
+
+import ItemContainer from 'common/basic/containers/ItemContainer';
 
 import {logoutService, resetPasswordService} from 'services';
 import {sysFetch} from 'utils/FetchUtil';
@@ -188,7 +191,7 @@ export default class CoreLayout extends Component
 		{
 			showResetPasswordModal: false
 		});
-	};
+	}
 
 	saveResetPasswordFormRef = (form) => 
 	{
