@@ -57,3 +57,6 @@ buildNumber.properties
 
 # For this project
 app.log
+
+# vscode
+.vscode
